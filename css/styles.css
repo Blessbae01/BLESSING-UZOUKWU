@@ -345,12 +345,183 @@ pre {
   height: 20px;
 }
 
-.social-links a:hover {
-  background: var(--primary);
-  color: var(--background);
-  border-color: var(--primary);
-  transform: translateY(-3px);
-}
+  .social-links a:hover {
+    background: var(--primary);
+    color: var(--background);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+  }
+
+  /* Hero Responsive */
+  @media (max-width: 1024px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .hero-image-section {
+      order: 1;
+      margin-bottom: 1rem;
+    }
+
+    .hero-center-section {
+      order: 2;
+    }
+
+    .hero-right-section {
+      order: 3;
+    }
+
+    .image-frames {
+      width: 240px;
+      height: 320px;
+    }
+
+    .intro-box h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding-top: 80px;
+      padding-bottom: 60px;
+      min-height: auto;
+    }
+
+    .hero-container {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 0 15px;
+    }
+
+    .image-frames {
+      width: 200px;
+      height: 280px;
+    }
+
+    .frame-2 {
+      left: 12px;
+      top: -12px;
+    }
+
+    .frame-3 {
+      left: 24px;
+      top: -24px;
+    }
+
+    .intro-box h1 {
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .intro-box p {
+      font-size: 0.95rem;
+    }
+
+    .social-links {
+      gap: 0.8rem;
+    }
+
+    .social-links a {
+      width: 36px;
+      height: 36px;
+    }
+
+    .social-links a svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .portfolio-link {
+      width: fit-content;
+    }
+
+    .hero::before {
+      width: 300px;
+      height: 300px;
+      top: 0;
+      right: -150px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      padding-top: 70px;
+      padding-bottom: 40px;
+    }
+
+    .hero-container {
+      padding: 0 12px;
+      gap: 1rem;
+    }
+
+    .image-frames {
+      width: 160px;
+      height: 220px;
+    }
+
+    .frame-2 {
+      left: 8px;
+      top: -8px;
+      width: 90%;
+      height: 92%;
+    }
+
+    .frame-3 {
+      left: 16px;
+      top: -16px;
+      width: 80%;
+      height: 85%;
+    }
+
+    .intro-box {
+      padding: 1.2rem;
+      border-left: 3px solid var(--primary);
+    }
+
+    .intro-box h1 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .intro-box p {
+      font-size: 0.9rem;
+    }
+
+    .intro-subtitle {
+      gap: 0.6rem;
+    }
+
+    .social-links {
+      gap: 0.6rem;
+    }
+
+    .social-links a {
+      width: 32px;
+      height: 32px;
+    }
+
+    .social-links a svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .portfolio-link {
+      padding: 0.7rem 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    .portfolio-link span {
+      font-size: 0.85rem;
+    }
+
+    .hero::before {
+      width: 200px;
+      height: 200px;
+      right: -100px;
+    }
+  }
 
 .intro-box {
   background: rgba(30, 41, 59, 0.6);
