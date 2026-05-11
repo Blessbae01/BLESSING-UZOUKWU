@@ -138,7 +138,13 @@ export default function Home() {
           {/* DigiSave - Featured */}
           <div className="project-featured">
             <div className="project-image">
-              <div className="image-placeholder-large">DigiSave</div>
+              <Image 
+                src="/images/digisave.jpg" 
+                alt="DigiSave - Smart Savings Platform" 
+                width={500} 
+                height={400}
+                className="featured-image"
+              />
             </div>
             <div className="project-content">
               <h3>DigiSave</h3>
@@ -148,13 +154,18 @@ export default function Home() {
                 Features automated savings goals and transaction tracking.
               </p>
                 <div className="tech-stack">
-                  <span>HTML</span>
-                  <span>Bootstrap</span>
-                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>Express</span>
                 </div>
-              <Link href="#" className="project-link">
-                Learn More →
-              </Link>
+              <div className="project-links">
+                <Link href="https://digisave-esusu-app.vercel.app/" target="_blank" className="project-link primary">
+                  Live Demo →
+                </Link>
+                <Link href="https://github.com/Blessbae01/digisave-esusu-app" target="_blank" className="project-link secondary">
+                  View Code →
+                </Link>
+              </div>
             </div>
           </div>
 
