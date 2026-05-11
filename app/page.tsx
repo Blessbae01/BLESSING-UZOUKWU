@@ -6,9 +6,11 @@ import { useState } from 'react';
 
 export default function Home() {
   const [activeNav, setActiveNav] = useState('home');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     setActiveNav(sectionId);
+    setMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -21,7 +23,16 @@ export default function Home() {
       <nav className="navbar">
         <div className="nav-container">
           <div className="nav-brand">Blessing Uzoukwu</div>
-          <div className="nav-links">
+          <button 
+            className="hamburger"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={`hamburger-line ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-line ${menuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-line ${menuOpen ? 'open' : ''}`}></span>
+          </button>
+          <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
             <button
               onClick={() => scrollToSection('home')}
               className={activeNav === 'home' ? 'active' : ''}
