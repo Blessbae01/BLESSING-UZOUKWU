@@ -495,7 +495,6 @@ export default function Home() {
             <div className="footer-divider"></div>
             <div className="footer-bottom">
               <p>&copy; 2026 Blessing Uzoukwu. All rights reserved.</p>
-              <p className="footer-tagline">Crafted with passion and precision.</p>
             </div>
           </div>
         </div>
