@@ -86,9 +86,14 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-image">
-            <div className="image-placeholder">
-              <span>💻</span>
-            </div>
+            <Image 
+              src="/images/headshot.png" 
+              alt="Blessing Uzoukwu - Full Stack Developer" 
+              width={300} 
+              height={300}
+              className="profile-image"
+              priority
+            />
           </div>
         </div>
       </section>
@@ -191,12 +196,8 @@ export default function Home() {
                 <div className="tech-stack">
                   <span>React</span>
                   <span>Node.js</span>
-                  <span>MongoDB</span>
+                  <span>Express</span>
                 </div>
-                <div className="project-actions">
-                  <Link href="https://techvillahub.com" target="_blank" className="action-link">
-                    Visit Live →
-                  </Link>
                 </div>
               </div>
             </div>
@@ -219,9 +220,9 @@ export default function Home() {
                   and reserve spaces for unforgettable tours and experiences.
                 </p>
                 <div className="tech-stack">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
+                  <span>HTML</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
                 </div>
                 <div className="project-actions">
                   <Link 

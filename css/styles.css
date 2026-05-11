@@ -199,6 +199,18 @@ pre {
   flex-wrap: wrap;
 }
 
+.profile-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.3);
+  border: 2px solid var(--primary);
+  animation: float 6s ease-in-out infinite;
+  object-fit: cover;
+}
+}
+
 .btn {
   padding: 0.9rem 2rem;
   border: none;
