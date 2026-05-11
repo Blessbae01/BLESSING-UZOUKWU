@@ -612,14 +612,7 @@ pre {
   position: relative;
   z-index: 1;
 }
-}
 
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
 
 .stat-label {
   color: var(--text-secondary);
