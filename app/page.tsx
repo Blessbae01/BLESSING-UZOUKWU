@@ -109,17 +109,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right: Description and portfolio link */}
+          {/* Right: Portfolio link */}
           <div className="hero-right-section">
-            <p className="hero-description">
-              I build scalable, user-centric web applications using modern technologies. 
-              Passionate about creating solutions that make a difference with the MERN stack and beyond.
-            </p>
             <Link href="#projects" className="portfolio-link">
-              <span>My Portfolio</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
+              <span>Portfolio →</span>
             </Link>
           </div>
         </div>
