@@ -58,42 +58,51 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="hero">
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1 className="hero-title">
-              Hi, I&apos;m <span className="highlight">Blessing Uzoukwu</span>
-            </h1>
-            <p className="hero-subtitle">
-              Full-Stack Developer | MERN Stack Specialist | Problem Solver
-            </p>
-            <p className="hero-description">
-              I build scalable, user-centric web applications using modern technologies. 
-              Passionate about creating solutions that make a difference.
-            </p>
-            <div className="hero-buttons">
-              <button
-                className="btn btn-primary"
-                onClick={() => scrollToSection('projects')}
-              >
-                View My Work
-              </button>
-              <button
-                className="btn btn-secondary"
-                onClick={() => scrollToSection('contact')}
-              >
-                Get in Touch
-              </button>
+        <div className="hero-container">
+          {/* Left: Image with geometric frames */}
+          <div className="hero-image-section">
+            <div className="image-frames">
+              <div className="frame frame-1"></div>
+              <div className="frame frame-2"></div>
+              <div className="frame frame-3"></div>
+              <Image 
+                src="/images/headshot.png" 
+                alt="Blessing Uzoukwu - Full Stack Developer" 
+                width={300} 
+                height={400}
+                className="profile-image"
+                priority
+              />
             </div>
           </div>
-          <div className="hero-image">
-            <Image 
-              src="/images/headshot.png" 
-              alt="Blessing Uzoukwu - Full Stack Developer" 
-              width={300} 
-              height={300}
-              className="profile-image"
-              priority
-            />
+
+          {/* Center: Social links and intro box */}
+          <div className="hero-center-section">
+            <div className="social-box">
+              <h3>Connect</h3>
+              <Link href="https://www.linkedin.com/in/blessing-uzoukwu" target="_blank">LinkedIn</Link>
+              <Link href="https://github.com/Blessbae01" target="_blank">GitHub</Link>
+              <Link href="https://twitter.com" target="_blank">Twitter</Link>
+              <Link href="mailto:uzoukwublessing34@gmail.com">Email</Link>
+            </div>
+            <div className="intro-box">
+              <h1>Hi, I&apos;m <span>Blessing</span></h1>
+              <p>Full-Stack Developer</p>
+            </div>
+          </div>
+
+          {/* Right: Description and portfolio link */}
+          <div className="hero-right-section">
+            <p className="hero-description">
+              I build scalable, user-centric web applications using modern technologies. 
+              Passionate about creating solutions that make a difference with the MERN stack and beyond.
+            </p>
+            <Link href="#projects" className="portfolio-link">
+              <span>My Portfolio</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
