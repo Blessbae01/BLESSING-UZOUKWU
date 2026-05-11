@@ -10,79 +10,122 @@
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold highlight-text" href="#">B.U</a>
+      <a class="navbar-brand fw-bold" href="#">
+        <span class="highlight-text">B.U</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="https://docs.google.com/document/d/1Lg_v3Q5jk2Bjch3IYbeGlM56nVndoS8I/edit?usp=sharing" target="_blank" class="nav-link btn btn-primary-custom btn-sm ms-2">CV</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section id="about">
-    <div class="container text-center">
-      <img src="images/profilePic.jpg" class="circle-pic mb-4" alt="Blessing Uzoukwu">
-      <h1 class="display-4 fw-bold">Blessing <span class="highlight-text">Uzoukwu</span></h1>
-      <h3 class="h5 text-secondary mb-4">Software Engineer | Full-Stack Developer (MERN)</h3>
-      <p class="lead mx-auto" style="max-width: 800px;">
-        I am a <strong>Computer Engineering graduate</strong> and software developer specializing in building 
-        scalable web applications. With 3 years of experience, I focus on creating 
-        clean, efficient code and seamless user experiences using the <strong>MERN Stack</strong>.
-      </p>
-      <div class="mt-4">
-        <a href="https://github.com/Blessbae01" target="_blank" class="me-3 text-white fs-4"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/blessing-uzoukwu" target="_blank" class="me-3 text-white fs-4"><i class="fab fa-linkedin"></i></a>
-        <a href="https://wa.me/2348061447290" target="_blank" class="text-white fs-4"><i class="fab fa-whatsapp"></i></a>
+  <!-- Hero Section -->
+  <section id="about" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-6 text-lg-start text-center mb-4 mb-lg-0">
+          <div class="hero-content">
+            <h1 class="display-3 fw-bold mb-3">
+              Hi, I'm <span class="highlight-text">Blessing</span>
+            </h1>
+            <h2 class="h3 text-muted mb-4">Full-Stack Developer & Software Engineer</h2>
+            <p class="lead text-white-50 mb-5">
+              Computer Engineering graduate with 3+ years crafting scalable web applications. 
+              Specializing in MERN stack to turn ideas into reality.
+            </p>
+            <div class="hero-buttons mb-5">
+              <a href="https://docs.google.com/document/d/1Lg_v3Q5jk2Bjch3IYbeGlM56nVndoS8I/edit?usp=sharing" target="_blank" class="btn btn-primary-custom btn-lg px-5 me-3">
+                <i class="fas fa-download me-2"></i> Download CV
+              </a>
+              <a href="#projects" class="btn btn-outline-primary btn-lg px-5">
+                View My Work
+              </a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/Blessbae01" target="_blank" class="social-icon" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/blessing-uzoukwu" target="_blank" class="social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://wa.me/2348061447290" target="_blank" class="social-icon" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="images/profilePic.jpg" class="circle-pic" alt="Blessing Uzoukwu">
+        </div>
       </div>
-      <div class="mt-5">
-  <a href="https://docs.google.com/document/d/1Lg_v3Q5jk2Bjch3IYbeGlM56nVndoS8I/edit?usp=sharing&ouid=101848923334839374161&rtpof=true&sd=true" download class="btn btn-primary-custom px-5 py-3 fw-bold">
-    <i class="fas fa-file-download me-2"></i> DOWNLOAD MY CV
-  </a>
-</div>
     </div>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills">
     <div class="container">
-      <h2 class="text-center mb-5 highlight-text">TECHNICAL STACK</h2>
+      <div class="section-header text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Technical Stack</h2>
+        <div class="highlight-bar"></div>
+        <p class="text-white-50 mt-3">Technologies and tools I work with</p>
+      </div>
+      
       <div class="row g-4">
-        <div class="col-md-4">
-          <div class="glass h-100">
-            <h5 class="highlight-text mb-3"><i class="fas fa-layer-group me-2"></i>Frontend</h5>
-            <ul class="list-unstyled">
-              <li><i class="fab fa-react text-info me-2"></i>React.js / Next.js</li>
-              <li><i class="fab fa-js text-warning me-2"></i>JavaScript</li>
-              <li><i class="fas fa-wind text-info me-2"></i>Tailwind CSS</li>
-              <li><i class="fab fa-bootstrap text-purple me-2"></i>Bootstrap</li>
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card glass">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h5 class="highlight-text mb-3">Frontend</h5>
+            <ul class="skill-list">
+              <li><span class="skill-badge">React.js</span></li>
+              <li><span class="skill-badge">Next.js</span></li>
+              <li><span class="skill-badge">JavaScript</span></li>
+              <li><span class="skill-badge">Tailwind CSS</span></li>
+              <li><span class="skill-badge">Bootstrap</span></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="glass h-100">
-            <h5 class="highlight-text mb-3"><i class="fas fa-server me-2"></i>Backend</h5>
-            <ul class="list-unstyled">
-              <li><i class="fab fa-node-js text-success me-2"></i>Node.js</li>
-              <li><i class="fas fa-bolt text-warning me-2"></i>Express.js</li>
-              <li><i class="fas fa-database text-success me-2"></i>MongoDB</li>
-              <li><i class="fas fa-link text-secondary me-2"></i>REST APIs</li>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card glass">
+            <div class="skill-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h5 class="highlight-text mb-3">Backend</h5>
+            <ul class="skill-list">
+              <li><span class="skill-badge">Node.js</span></li>
+              <li><span class="skill-badge">Express.js</span></li>
+              <li><span class="skill-badge">MongoDB</span></li>
+              <li><span class="skill-badge">REST APIs</span></li>
+              <li><span class="skill-badge">Firebase</span></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="glass h-100">
-            <h5 class="highlight-text mb-3"><i class="fas fa-mobile-alt me-2"></i>Mobile & Tools</h5>
-            <ul class="list-unstyled">
-              <li><i class="fab fa-react text-info me-2"></i>React Native / Expo</li>
-              <li><i class="fab fa-git-alt text-danger me-2"></i>Git / GitHub</li>
-              <li><i class="fas fa-cloud text-primary me-2"></i>Vercel</li>
-              <li><i class="fas fa-terminal text-light me-2"></i>Linux</li>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card glass">
+            <div class="skill-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h5 class="highlight-text mb-3">Tools & Platforms</h5>
+            <ul class="skill-list">
+              <li><span class="skill-badge">Git & GitHub</span></li>
+              <li><span class="skill-badge">Vercel</span></li>
+              <li><span class="skill-badge">React Native</span></li>
+              <li><span class="skill-badge">Linux</span></li>
+              <li><span class="skill-badge">Figma</span></li>
             </ul>
           </div>
         </div>
@@ -90,65 +133,174 @@
     </div>
   </section>
 
- <section id="projects">
+  <!-- Projects Section -->
+  <section id="projects">
     <div class="container">
-      <h2 class="text-center mb-5 highlight-text">SELECTED PROJECTS</h2>
-      <div class="row g-4">
+      <div class="section-header text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Featured Projects</h2>
+        <div class="highlight-bar"></div>
+        <p class="text-white-50 mt-3">Showcase of my best work</p>
+      </div>
 
-        <div class="col-12 mb-4">
-          <div class="glass">
-            <div class="row align-items-center">
+      <!-- Project 1: DigiSave - Full Width -->
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="project-card glass overflow-hidden">
+            <div class="row align-items-center g-0">
               <div class="col-lg-6">
-                <img src="images/digisave_mockup.jpg" class="img-fluid rounded-3 shadow-lg" alt="DigiSave App">
+                <img src="images/digisave_mockup.jpg" alt="DigiSave" class="project-image w-100 h-100" style="object-fit: cover; min-height: 400px;">
               </div>
-              <div class="col-lg-6">
-                <span class="badge bg-primary mb-2">Flagship Project</span>
-                <h3 class="text-white">DigiSave (Esusu App)</h3>
-                <p class="text-white-50">A full-stack group savings platform (MERN + React Native). Features automated contributions, secure member tracking, and payment integrations for modern financial inclusion.</p>
-                <div class="mt-3">
-                  <a href="https://digisave-esusu-app.vercel.app" target="_blank" class="btn btn-primary-custom me-2">Live Demo</a>
-                  <a href="https://github.com/Blessbae01/digisave-esusu-app" target="_blank" class="btn btn-outline-light">GitHub Code</a>
+              <div class="col-lg-6 p-5">
+                <div class="badge-primary mb-3">Flagship Project</div>
+                <h3 class="h2 fw-bold mb-3">DigiSave (Esusu App)</h3>
+                <p class="text-white-50 mb-4 fs-5">
+                  A revolutionary MERN + React Native platform for group savings. Features automated contributions, 
+                  secure member tracking, and integrated payment processing to promote financial inclusion.
+                </p>
+                <div class="tech-stack mb-4">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">React Native</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://digisave-esusu-app.vercel.app" target="_blank" class="btn btn-primary-custom me-3">
+                    <i class="fas fa-external-link-alt me-2"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/Blessbae01/digisave-esusu-app" target="_blank" class="btn btn-outline-primary">
+                    <i class="fab fa-github me-2"></i> GitHub
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-4">
-          <div class="glass h-100 text-center">
-            <img src="images/ADHR_Quiz.png" class="project-img mb-3" alt="ADHD Quiz App">
-            <h5 class="text-white">ADHD Test Quiz App</h5>
-            <p class="text-white-50 small">An interactive diagnostic tool built with Node.js and JavaScript to help users assess symptoms through a responsive UI.</p>
-            <a href="https://github.com/Blessbae01/BBstar_ADHD_DigiTest" target="_blank" class="btn btn-sm btn-outline-primary text-white mt-auto">View Code</a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="glass h-100 text-center">
-            <img src="images/digiAcademy.jpg" class="project-img mb-3" alt="Digi Academy">
-            <h5 class="text-white">Digi Academy Platform</h5>
-            <p class="text-white-50 small">A sleek, responsive learning platform designed to showcase tech courses and student resources.</p>
-            <a href="https://github.com/Blessbae01/DigiAcademyProject" target="_blank" class="btn btn-sm btn-outline-primary text-white mt-auto">View Code</a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="glass h-100 text-center">
-            <div class="d-flex align-items-center justify-content-center" style="height: 200px; background: rgba(100,149,237,0.1); border-radius: 12px; margin-bottom: 1.5rem;">
-               <i class="fas fa-rocket fa-3x text-primary"></i>
+      <!-- Projects Grid: 2x2 -->
+      <div class="row g-4">
+        
+        <!-- Project 2: TechVilla Hub -->
+        <div class="col-lg-6">
+          <div class="project-card glass h-100">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/photo_1_2026-05-11_09-38-46-UajtfFaKXipPSYUinJD24cIVFpeKiv.jpg" alt="TechVilla Hub" class="project-thumb">
+            <div class="project-card-content">
+              <div class="badge-success mb-2">Completed</div>
+              <h4 class="fw-bold mb-2">TechVilla Hub</h4>
+              <p class="text-white-50 small mb-3">
+                A comprehensive MERN platform connecting job seekers with tech opportunities. 
+                Features job board, scholarship listings, and community engagement tools.
+              </p>
+              <div class="tech-stack mb-3">
+                <span class="tech-tag tech-tag-sm">MERN</span>
+                <span class="tech-tag tech-tag-sm">Vercel</span>
+                <span class="tech-tag tech-tag-sm">SEO</span>
+              </div>
+              <a href="https://techvillahub.com" target="_blank" class="btn btn-primary-custom btn-sm w-100">
+                <i class="fas fa-globe me-2"></i> Visit Site
+              </a>
             </div>
-            <h5 class="text-white">TechVilla Hub</h5>
-            <p class="text-white-50 small">A MERN-stack scholarship and job board platform optimized for SEO and Google AdSense monetization.</p>
-            <button class="btn btn-sm btn-outline-secondary text-white mt-auto" disabled>In Development</button>
           </div>
         </div>
 
+        <!-- Project 3: Discover Nigeria -->
+        <div class="col-lg-6">
+          <div class="project-card glass h-100">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/greencity-yfnpU7IwgtnpDnGQdlFhEQfSpxArJ4.jpg" alt="Discover Nigeria" class="project-thumb">
+            <div class="project-card-content">
+              <div class="badge-success mb-2">Completed</div>
+              <h4 class="fw-bold mb-2">Discover Nigeria</h4>
+              <p class="text-white-50 small mb-3">
+                A stunning tourism platform for discovering and booking Nigeria&apos;s best destinations. 
+                Seamless travel reservations with interactive destination guides.
+              </p>
+              <div class="tech-stack mb-3">
+                <span class="tech-tag tech-tag-sm">React</span>
+                <span class="tech-tag tech-tag-sm">Node.js</span>
+                <span class="tech-tag tech-tag-sm">Tourism</span>
+              </div>
+              <a href="https://github.com/Blessbae01/Vacation-website-for-DISCOVER-NIGERIA" target="_blank" class="btn btn-primary-custom btn-sm w-100">
+                <i class="fab fa-github me-2"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: ADHD Quiz App -->
+        <div class="col-lg-6">
+          <div class="project-card glass h-100">
+            <img src="images/ADHR_Quiz.png" alt="ADHD Quiz App" class="project-thumb">
+            <div class="project-card-content">
+              <div class="badge-info mb-2">Completed</div>
+              <h4 class="fw-bold mb-2">ADHD Test Quiz App</h4>
+              <p class="text-white-50 small mb-3">
+                An interactive diagnostic tool built with Node.js and JavaScript. 
+                Comprehensive assessment to help users evaluate symptoms.
+              </p>
+              <div class="tech-stack mb-3">
+                <span class="tech-tag tech-tag-sm">Node.js</span>
+                <span class="tech-tag tech-tag-sm">JavaScript</span>
+                <span class="tech-tag tech-tag-sm">Responsive</span>
+              </div>
+              <a href="https://github.com/Blessbae01/BBstar_ADHD_DigiTest" target="_blank" class="btn btn-primary-custom btn-sm w-100">
+                <i class="fab fa-github me-2"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Digi Academy -->
+        <div class="col-lg-6">
+          <div class="project-card glass h-100">
+            <img src="images/digiAcademy.jpg" alt="Digi Academy" class="project-thumb">
+            <div class="project-card-content">
+              <div class="badge-info mb-2">Completed</div>
+              <h4 class="fw-bold mb-2">Digi Academy Platform</h4>
+              <p class="text-white-50 small mb-3">
+                A sleek, responsive learning platform showcasing tech courses. 
+                Designed for accessibility and seamless student experience.
+              </p>
+              <div class="tech-stack mb-3">
+                <span class="tech-tag tech-tag-sm">React</span>
+                <span class="tech-tag tech-tag-sm">Bootstrap</span>
+                <span class="tech-tag tech-tag-sm">UX</span>
+              </div>
+              <a href="https://github.com/Blessbae01/DigiAcademyProject" target="_blank" class="btn btn-primary-custom btn-sm w-100">
+                <i class="fab fa-github me-2"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="text-center py-5">
-    <p class="text-white-50">&copy; 2025 Blessing Uzoukwu. All rights reserved.</p>
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2 class="display-5 fw-bold mb-4">Let&apos;s Build Something Great</h2>
+      <p class="lead text-white-50 mb-5 mx-auto" style="max-width: 600px;">
+        I&apos;m always interested in hearing about new projects and opportunities.
+      </p>
+      <div class="social-links mb-5">
+        <a href="https://github.com/Blessbae01" target="_blank" class="social-icon-large" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/blessing-uzoukwu" target="_blank" class="social-icon-large" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://wa.me/2348061447290" target="_blank" class="social-icon-large" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="text-white-50 mb-0">&copy; 2025 Blessing Uzoukwu. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
