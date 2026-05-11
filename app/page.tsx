@@ -329,50 +329,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* ADHD Quiz App */}
-            <div className="project-card">
-              <div className="project-card-image">
-                <Image
-                  src="/images/adhd.png"
-                  alt="ADHD Quiz App"
-                  width={400}
-                  height={250}
-                  quality={85}
-                />
-              </div>
-              <div className="project-card-content">
-                <h4>ADHD Quiz App</h4>
-                <p className="project-description">
-                  Interactive assessment tool designed to help identify ADHD symptoms through engaging quiz format 
-                  with real-time feedback.
-                </p>
-                <div className="tech-stack">
-                  <span>HTML</span>
-                  <span>Bootstrap</span>
-                  <span>JavaScript</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Digi Academy */}
-            <div className="project-card">
-              <div className="project-card-image">
-                <div className="image-placeholder">Digi Academy</div>
-              </div>
-              <div className="project-card-content">
-                <h4>Digi Academy</h4>
-                <p className="project-description">
-                  Online learning platform providing courses and resources for digital skills development. 
-                  Empowering learners with practical tech education.
-                </p>
-                <div className="tech-stack">
-                  <span>HTML</span>
-                  <span>Bootstrap</span>
-                  <span>JavaScript</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
