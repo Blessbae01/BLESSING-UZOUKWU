@@ -329,11 +329,23 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* ADHD Quiz App */}
+            <div className="project-card">
+              <div className="project-card-image">
+                <Image
+                  src="/images/adhd.png"
+                  alt="ADHD Quiz App"
+                  width={400}
+                  height={250}
+                  quality={85}
+                />
+              </div>
               <div className="project-card-content">
-                <h4>ADHD Awareness Quiz App</h4>
+                <h4>ADHD Quiz App</h4>
                 <p className="project-description">
-                  Interactive educational quiz application designed to increase awareness about ADHD. 
-                  Features engaging questions and detailed feedback.
+                  Interactive assessment tool designed to help identify ADHD symptoms through engaging quiz format 
+                  with real-time feedback.
                 </p>
                 <div className="tech-stack">
                   <span>HTML</span>
