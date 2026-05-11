@@ -349,46 +349,59 @@ export default function Home() {
       {/* Skills Section */}
       <section id="skills" className="skills">
         <div className="container">
-          <h2 className="section-title">Skills & Technologies</h2>
+          <div className="skills-header">
+            <h2 className="section-title" style={{ color: '#1e293b' }}>Skills & Technologies</h2>
+            <div className="skills-accent"></div>
+          </div>
+          <p className="skills-intro">
+            I&apos;ve built expertise across the full web development stack, specializing in creating scalable applications with modern technologies. Here&apos;s what I work with:
+          </p>
           <div className="skills-grid">
-            <div className="skill-category">
-              <h4>Frontend</h4>
-              <ul>
-                <li>React & Next.js</li>
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>Tailwind CSS</li>
-                <li>Bootstrap</li>
-              </ul>
+            <div className="skill-card">
+              <div className="skill-icon">💻</div>
+              <h3>Frontend Development</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">React</span>
+                <span className="skill-tag">Next.js</span>
+                <span className="skill-tag">HTML5</span>
+                <span className="skill-tag">CSS3</span>
+                <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">Tailwind</span>
+                <span className="skill-tag">Bootstrap</span>
+              </div>
             </div>
-            <div className="skill-category">
-              <h4>Backend</h4>
-              <ul>
-                <li>Node.js & Express</li>
-                <li>RESTful APIs</li>
-                <li>Server-side Logic</li>
-                <li>Authentication & Authorization</li>
-              </ul>
+            <div className="skill-card">
+              <div className="skill-icon">⚙️</div>
+              <h3>Backend Development</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Node.js</span>
+                <span className="skill-tag">Express</span>
+                <span className="skill-tag">REST APIs</span>
+                <span className="skill-tag">Authentication</span>
+                <span className="skill-tag">Server Logic</span>
+              </div>
             </div>
-            <div className="skill-category">
-              <h4>Database & Tools</h4>
-              <ul>
-                <li>MongoDB</li>
-                <li>Supabase</li>
-                <li>Git & GitHub</li>
-                <li>Vercel</li>
-                <li>DevTools & Debugging</li>
-              </ul>
+            <div className="skill-card">
+              <div className="skill-icon">🗄️</div>
+              <h3>Databases & Tools</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">MongoDB</span>
+                <span className="skill-tag">Supabase</span>
+                <span className="skill-tag">Git</span>
+                <span className="skill-tag">GitHub</span>
+                <span className="skill-tag">Vercel</span>
+              </div>
             </div>
-            <div className="skill-category">
-              <h4>Soft Skills</h4>
-              <ul>
-                <li>Problem Solving</li>
-                <li>Team Collaboration</li>
-                <li>Communication</li>
-                <li>Project Management</li>
-                <li>Continuous Learning</li>
-              </ul>
+            <div className="skill-card">
+              <div className="skill-icon">🤝</div>
+              <h3>Soft Skills</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Problem Solving</span>
+                <span className="skill-tag">Collaboration</span>
+                <span className="skill-tag">Communication</span>
+                <span className="skill-tag">Leadership</span>
+                <span className="skill-tag">Adaptability</span>
+              </div>
             </div>
           </div>
         </div>
