@@ -405,7 +405,6 @@ export default function Home() {
                 <h3>Blessing Uzoukwu</h3>
                 <p>Full-Stack Developer & Problem Solver</p>
                 <div className="footer-connect">
-                  <h4>Let&apos;s Connect</h4>
                   <p>I&apos;m always interested in hearing about new projects and opportunities. Reach out and let&apos;s create something amazing together.</p>
                 </div>
               </div>
