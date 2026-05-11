@@ -415,22 +415,145 @@ pre {
 
 /* About Section */
 .about {
-  padding: 80px 0;
-  background: var(--background-light);
+  padding: 100px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f9f8ff 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-.about-grid {
+.about::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.about-header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-header .section-title {
+  color: #1e293b;
+  margin: 0;
+}
+
+.about-accent {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  border-radius: 2px;
+}
+
+.about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1.2fr;
   gap: 3rem;
   align-items: start;
+  position: relative;
+  z-index: 1;
 }
 
-.about-text p {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  margin-bottom: 1.5rem;
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-highlight {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(124, 58, 237, 0.04) 100%);
+  border-left: 5px solid var(--primary);
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.about-highlight::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 3rem;
+  color: rgba(124, 58, 237, 0.2);
+}
+
+.about-intro {
+  font-size: 1.15rem;
+  color: #1e293b;
   line-height: 1.8;
+  font-weight: 500;
+  margin: 0;
+}
+
+.about-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-point {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 2px solid #f0f0f8;
+  transition: all 0.3s ease;
+}
+
+.about-point:hover {
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.12);
+  transform: translateX(5px);
+}
+
+.point-icon {
+  font-size: 2rem;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.point-content h4 {
+  color: var(--primary);
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.point-content p {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.about-closing {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-style: italic;
+  padding: 1.5rem 0;
+  border-top: 2px solid #f0f0f8;
 }
 
 .about-stats {
@@ -440,18 +563,55 @@ pre {
 }
 
 .stat-card {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid var(--border);
   text-align: center;
   transition: all 0.3s ease;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .stat-card:hover {
-  border-color: var(--primary);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(124, 58, 237, 0.3);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-desc {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 1;
+}
 }
 
 .stat-number {

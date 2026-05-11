@@ -121,34 +121,59 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="about">
         <div className="container">
-          <h2 className="section-title">About Me</h2>
-          <div className="about-grid">
+          <div className="about-header">
+            <h2 className="section-title">About Me</h2>
+            <div className="about-accent"></div>
+          </div>
+          <div className="about-content">
             <div className="about-text">
-              <p>
-                I&apos;m a software engineer with a passion for building elegant solutions to complex problems. 
-                With expertise in the MERN stack (MongoDB, Express, React, Node.js), I create full-stack web applications 
-                that are both powerful and user-friendly.
-              </p>
-              <p>
-                My journey in tech has taught me the importance of clean code, continuous learning, and collaboration. 
-                I thrive in environments where I can contribute meaningful work and grow alongside talented teams.
-              </p>
-              <p>
-                When I&apos;m not coding, you can find me exploring new technologies or sharing knowledge with the developer community.
+              <div className="about-highlight">
+                <p className="about-intro">
+                  I&apos;m a full-stack developer passionate about crafting elegant digital solutions that solve real-world problems. With deep expertise in modern web technologies, I specialize in building scalable applications that blend functionality with beautiful user experiences.
+                </p>
+              </div>
+              <div className="about-points">
+                <div className="about-point">
+                  <div className="point-icon">💡</div>
+                  <div className="point-content">
+                    <h4>Problem Solver</h4>
+                    <p>I approach challenges systematically, breaking complex problems into manageable solutions using best practices and clean code.</p>
+                  </div>
+                </div>
+                <div className="about-point">
+                  <div className="point-icon">🚀</div>
+                  <div className="point-content">
+                    <h4>Full-Stack Developer</h4>
+                    <p>From frontend interfaces to backend systems, I build complete web applications using MERN stack and modern technologies.</p>
+                  </div>
+                </div>
+                <div className="about-point">
+                  <div className="point-icon">🤝</div>
+                  <div className="point-content">
+                    <h4>Collaborative Team Player</h4>
+                    <p>I thrive in collaborative environments, sharing knowledge and growing alongside talented developers and designers.</p>
+                  </div>
+                </div>
+              </div>
+              <p className="about-closing">
+                When I&apos;m not coding, you can find me exploring emerging technologies or contributing to the developer community.
               </p>
             </div>
             <div className="about-stats">
               <div className="stat-card">
                 <div className="stat-number">5+</div>
-                <div className="stat-label">Projects Completed</div>
+                <div className="stat-label">Projects</div>
+                <div className="stat-desc">Deployed to production</div>
               </div>
               <div className="stat-card">
                 <div className="stat-number">MERN</div>
-                <div className="stat-label">Stack Expertise</div>
+                <div className="stat-label">Stack</div>
+                <div className="stat-desc">Core expertise</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">100%</div>
-                <div className="stat-label">Deployment Ready</div>
+                <div className="stat-number">∞</div>
+                <div className="stat-label">Learning</div>
+                <div className="stat-desc">Always improving</div>
               </div>
             </div>
           </div>
