@@ -198,7 +198,6 @@ export default function Home() {
                   <span>Node.js</span>
                   <span>Express</span>
                 </div>
-                </div>
               </div>
             </div>
 
