@@ -109,8 +109,7 @@ export default function Home() {
                 I thrive in environments where I can contribute meaningful work and grow alongside talented teams.
               </p>
               <p>
-                When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                or sharing knowledge with the developer community.
+                When I&apos;m not coding, you can find me exploring new technologies or sharing knowledge with the developer community.
               </p>
             </div>
             <div className="about-stats">
@@ -146,15 +145,13 @@ export default function Home() {
               <p className="project-subtitle">Smart Savings Platform</p>
               <p>
                 A comprehensive savings application designed to help users manage their finances intelligently. 
-                Features automated savings goals, transaction tracking, and personalized financial insights to help 
-                users build better financial habits.
+                Features automated savings goals and transaction tracking.
               </p>
-              <div className="tech-stack">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-                <span>Express</span>
-              </div>
+                <div className="tech-stack">
+                  <span>HTML</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                </div>
               <Link href="#" className="project-link">
                 Learn More →
               </Link>
@@ -239,9 +236,9 @@ export default function Home() {
                   Features engaging questions and detailed feedback.
                 </p>
                 <div className="tech-stack">
-                  <span>React</span>
+                  <span>HTML</span>
+                  <span>Bootstrap</span>
                   <span>JavaScript</span>
-                  <span>CSS</span>
                 </div>
               </div>
             </div>
@@ -258,9 +255,9 @@ export default function Home() {
                   Empowering learners with practical tech education.
                 </p>
                 <div className="tech-stack">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
+                  <span>HTML</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
                 </div>
               </div>
             </div>
@@ -279,8 +276,8 @@ export default function Home() {
                 <li>React & Next.js</li>
                 <li>HTML5 & CSS3</li>
                 <li>JavaScript (ES6+)</li>
-                <li>Responsive Design</li>
-                <li>UI/UX Implementation</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
               </ul>
             </div>
             <div className="skill-category">
@@ -290,16 +287,15 @@ export default function Home() {
                 <li>RESTful APIs</li>
                 <li>Server-side Logic</li>
                 <li>Authentication & Authorization</li>
-                <li>Database Design</li>
               </ul>
             </div>
             <div className="skill-category">
               <h4>Database & Tools</h4>
               <ul>
                 <li>MongoDB</li>
-                <li>SQL Databases</li>
+                <li>Supabase</li>
                 <li>Git & GitHub</li>
-                <li>Deployment (Vercel, Heroku)</li>
+                <li>Vercel</li>
                 <li>DevTools & Debugging</li>
               </ul>
             </div>
@@ -330,17 +326,17 @@ export default function Home() {
               <h4>GitHub</h4>
               <p>Check out my code</p>
             </Link>
-            <Link href="https://linkedin.com" target="_blank" className="contact-card">
+            <Link href="https://www.linkedin.com/in/blessing-uzoukwu" target="_blank" className="contact-card">
               <div className="contact-icon">💼</div>
               <h4>LinkedIn</h4>
               <p>Connect with me</p>
             </Link>
-            <Link href="mailto:blessing@example.com" className="contact-card">
+            <Link href="mailto:uzoukwublessing34@gmail.com" className="contact-card">
               <div className="contact-icon">✉️</div>
               <h4>Email</h4>
               <p>Send me a message</p>
             </Link>
-            <Link href="https://wa.me/234" target="_blank" className="contact-card">
+            <Link href="https://wa.me/2348061447290" target="_blank" className="contact-card">
               <div className="contact-icon">💬</div>
               <h4>WhatsApp</h4>
               <p>Chat with me</p>
@@ -352,11 +348,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Blessing Uzoukwu. All rights reserved.</p>
-          <div className="footer-links">
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Terms of Service</Link>
-          </div>
+          <p>&copy; 2026 Blessing Uzoukwu. All rights reserved.</p>
         </div>
       </footer>
     </div>
