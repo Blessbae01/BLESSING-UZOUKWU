@@ -1,0 +1,29 @@
+{
+  "name": "v0-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blessbae01/BLESSING-UZOUKWU.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Blessbae01/BLESSING-UZOUKWU/issues"
+  },
+  "homepage": "https://github.com/Blessbae01/BLESSING-UZOUKWU#readme",
+  "dependencies": {
+    "next": "^16.2.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  }
+}
