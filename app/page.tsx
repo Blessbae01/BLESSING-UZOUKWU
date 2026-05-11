@@ -283,8 +283,52 @@ export default function Home() {
             {/* ADHD Quiz App */}
             <div className="project-card">
               <div className="project-card-image">
-                <div className="image-placeholder">ADHD Quiz</div>
+                <Image
+                  src="/images/adhd.png"
+                  alt="ADHD Quiz App"
+                  width={400}
+                  height={250}
+                  quality={85}
+                />
               </div>
+              <div className="project-card-content">
+                <h4>ADHD Quiz App</h4>
+                <p className="project-description">
+                  Interactive assessment tool designed to help identify ADHD symptoms through engaging quiz format 
+                  with real-time feedback.
+                </p>
+                <div className="tech-stack">
+                  <span>HTML</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Digi Academy */}
+            <div className="project-card">
+              <div className="project-card-image">
+                <Image
+                  src="/images/digi-academy.jpg"
+                  alt="Digi Academy - Online Learning Platform"
+                  width={400}
+                  height={250}
+                  quality={85}
+                />
+              </div>
+              <div className="project-card-content">
+                <h4>Digi Academy</h4>
+                <p className="project-description">
+                  Online learning platform providing courses and resources for digital skills development. 
+                  Empowering learners with practical tech education.
+                </p>
+                <div className="tech-stack">
+                  <span>HTML</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
               <div className="project-card-content">
                 <h4>ADHD Awareness Quiz App</h4>
                 <p className="project-description">
