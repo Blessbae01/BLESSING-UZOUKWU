@@ -7,6 +7,67 @@ import { useState } from 'react';
 export default function Home() {
   const [activeNav, setActiveNav] = useState('home');
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+
+  const projects = [
+    {
+      id: 'digisave',
+      title: 'DigiSave',
+      subtitle: 'Smart Savings Platform',
+      description: 'A comprehensive savings application designed to help users manage their finances intelligently. Features automated savings goals and transaction tracking.',
+      image: '/images/digisave.jpg',
+      tech: ['React', 'Node.js', 'Express'],
+      liveLink: 'https://digisave-esusu-app.vercel.app/',
+      codeLink: 'https://github.com/Blessbae01/digisave-esusu-app'
+    },
+    {
+      id: 'techvilla',
+      title: 'TechVilla Hub',
+      subtitle: 'Tech Career Platform',
+      description: 'Your gateway to the tech career of your dreams. Daily updates on global tech roles, internships, scholarships, and free training.',
+      image: '/images/techvillahub.jpg',
+      tech: ['React', 'Node.js', 'Express'],
+      liveLink: 'https://techvillahub.com',
+      codeLink: 'https://techvillahub.com'
+    },
+    {
+      id: 'discover',
+      title: 'Discover Nigeria',
+      subtitle: 'Tourism Platform',
+      description: 'A travel booking platform where users can explore Nigeria\'s most beautiful destinations and reserve spaces for unforgettable tours and experiences.',
+      image: '/images/greencity.jpg',
+      tech: ['HTML', 'Bootstrap', 'JavaScript'],
+      liveLink: 'https://github.com/Blessbae01/Vacation-website-for-DISCOVER-NIGERIA',
+      codeLink: 'https://github.com/Blessbae01/Vacation-website-for-DISCOVER-NIGERIA'
+    },
+    {
+      id: 'adhd',
+      title: 'ADHD Quiz App',
+      subtitle: 'Assessment Tool',
+      description: 'Interactive assessment tool designed to help identify ADHD symptoms through engaging quiz format with real-time feedback.',
+      image: '/images/adhd.png',
+      tech: ['HTML', 'Bootstrap', 'JavaScript'],
+      liveLink: 'https://github.com/Blessbae01/BBstar_ADHD_DigiTest',
+      codeLink: 'https://github.com/Blessbae01/BBstar_ADHD_DigiTest'
+    },
+    {
+      id: 'digi-academy',
+      title: 'Digi Academy',
+      subtitle: 'Online Learning Platform',
+      description: 'Online learning platform providing courses and resources for digital skills development. Empowering learners with practical tech education.',
+      image: '/images/digi-academy.jpg',
+      tech: ['HTML', 'Bootstrap', 'JavaScript'],
+      liveLink: 'https://github.com/Blessbae01/DigiAcademyProject',
+      codeLink: 'https://github.com/Blessbae01/DigiAcademyProject'
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentProjectIndex((prev) => (prev + 1) % projects.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [projects.length]);
 
   const scrollToSection = (sectionId: string) => {
     setActiveNav(sectionId);
@@ -15,6 +76,18 @@ export default function Home() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const goToProject = (index: number) => {
+    setCurrentProjectIndex(index);
+  };
+
+  const nextProject = () => {
+    setCurrentProjectIndex((prev) => (prev + 1) % projects.length);
+  };
+
+  const prevProject = () => {
+    setCurrentProjectIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
   return (
@@ -196,162 +269,62 @@ export default function Home() {
         <div className="container">
           <h2 className="section-title">Featured Projects</h2>
           
-          {/* DigiSave - Featured */}
-          <div className="project-featured">
-            <div className="project-image">
-              <Image 
-                src="/images/digisave.jpg" 
-                alt="DigiSave - Smart Savings Platform" 
-                width={500} 
-                height={400}
-                className="featured-image"
-              />
-            </div>
-            <div className="project-content">
-              <h3>DigiSave</h3>
-              <p className="project-subtitle">Smart Savings Platform</p>
-              <p>
-                A comprehensive savings application designed to help users manage their finances intelligently. 
-                Features automated savings goals and transaction tracking.
-              </p>
-                <div className="tech-stack">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>Express</span>
+          {/* Projects Carousel */}
+          <div className="projects-carousel">
+            <div className="carousel-track" style={{ transform: `translateX(-${currentProjectIndex * 100}%)` }}>
+              {projects.map((project) => (
+                <div key={project.id} className="carousel-slide">
+                  <div className="project-featured">
+                    <div className="project-image">
+                      <Image 
+                        src={project.image} 
+                        alt={project.title}
+                        width={500} 
+                        height={400}
+                        className="featured-image"
+                      />
+                    </div>
+                    <div className="project-content">
+                      <h3>{project.title}</h3>
+                      <p className="project-subtitle">{project.subtitle}</p>
+                      <p>{project.description}</p>
+                      <div className="tech-stack">
+                        {project.tech.map((tech) => (
+                          <span key={tech}>{tech}</span>
+                        ))}
+                      </div>
+                      <div className="project-links">
+                        <Link href={project.liveLink} target="_blank" className="project-link primary">
+                          Live Demo →
+                        </Link>
+                        <Link href={project.codeLink} target="_blank" className="project-link secondary">
+                          View Code →
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              <div className="project-links">
-                <Link href="https://digisave-esusu-app.vercel.app/" target="_blank" className="project-link primary">
-                  Live Demo →
-                </Link>
-                <Link href="https://github.com/Blessbae01/digisave-esusu-app" target="_blank" className="project-link secondary">
-                  View Code →
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Projects Grid */}
-          <div className="projects-grid">
-            {/* TechVilla Hub */}
-            <div className="project-card">
-              <div className="project-card-image">
-                <Image
-                  src="/images/techvillahub.jpg"
-                  alt="TechVilla Hub - Tech Career Platform"
-                  width={400}
-                  height={250}
-                  quality={85}
-                />
-              </div>
-              <div className="project-card-content">
-                <h4>TechVilla Hub</h4>
-                <p className="project-description">
-                  Your gateway to the tech career of your dreams. Daily updates on global tech roles, 
-                  internships, scholarships, and free training.
-                </p>
-                <div className="tech-stack">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>Express</span>
-                </div>
-                <div className="project-actions">
-                  <Link href="https://techvillahub.com" target="_blank" className="action-link">
-                    View Code →
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
 
-            {/* Discover Nigeria */}
-            <div className="project-card">
-              <div className="project-card-image">
-                <Image
-                  src="/images/greencity.jpg"
-                  alt="Discover Nigeria - Tourism Platform"
-                  width={400}
-                  height={250}
-                  quality={85}
-                />
-              </div>
-              <div className="project-card-content">
-                <h4>Discover Nigeria</h4>
-                <p className="project-description">
-                  A travel booking platform where users can explore Nigeria&apos;s most beautiful destinations 
-                  and reserve spaces for unforgettable tours and experiences.
-                </p>
-                <div className="tech-stack">
-                  <span>HTML</span>
-                  <span>Bootstrap</span>
-                  <span>JavaScript</span>
-                </div>
-                <div className="project-actions">
-                  <Link 
-                    href="https://github.com/Blessbae01/Vacation-website-for-DISCOVER-NIGERIA" 
-                    target="_blank" 
-                    className="action-link"
-                  >
-                    View Code →
-                  </Link>
-                </div>
-              </div>
-            </div>
+            {/* Carousel Controls */}
+            <button className="carousel-btn carousel-prev" onClick={prevProject} aria-label="Previous project">
+              ❮
+            </button>
+            <button className="carousel-btn carousel-next" onClick={nextProject} aria-label="Next project">
+              ❯
+            </button>
 
-            {/* ADHD Quiz App */}
-            <div className="project-card">
-              <div className="project-card-image">
-                <Image
-                  src="/images/adhd.png"
-                  alt="ADHD Quiz App"
-                  width={400}
-                  height={250}
-                  quality={85}
+            {/* Carousel Indicators */}
+            <div className="carousel-indicators">
+              {projects.map((_, index) => (
+                <button
+                  key={index}
+                  className={`indicator ${index === currentProjectIndex ? 'active' : ''}`}
+                  onClick={() => goToProject(index)}
+                  aria-label={`Go to project ${index + 1}`}
                 />
-              </div>
-              <div className="project-card-content">
-                <h4>ADHD Quiz App</h4>
-                <p className="project-description">
-                  Interactive assessment tool designed to help identify ADHD symptoms through engaging quiz format 
-                  with real-time feedback.
-                </p>
-                <div className="tech-stack">
-                  <span>HTML</span>
-                  <span>Bootstrap</span>
-                  <span>JavaScript</span>
-                </div>
-                <div className="project-actions">
-                  <Link href="https://github.com/Blessbae01/BBstar_ADHD_DigiTest" target="_blank" className="action-link">
-                    View Code →
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="project-card-image">
-                <Image
-                  src="/images/digi-academy.jpg"
-                  alt="Digi Academy - Online Learning Platform"
-                  width={400}
-                  height={250}
-                  quality={85}
-                />
-              </div>
-              <div className="project-card-content">
-                <h4>Digi Academy</h4>
-                <p className="project-description">
-                  Online learning platform providing courses and resources for digital skills development. 
-                  Empowering learners with practical tech education.
-                </p>
-                <div className="tech-stack">
-                  <span>HTML</span>
-                  <span>Bootstrap</span>
-                  <span>JavaScript</span>
-                </div>
-                <div className="project-actions">
-                  <Link href="https://github.com/Blessbae01/DigiAcademyProject" target="_blank" className="action-link">
-                    View Code →
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
