@@ -294,9 +294,11 @@ export default function Home() {
                         ))}
                       </div>
                       <div className="project-links">
-                        <Link href={project.liveLink} target="_blank" className="project-link primary">
-                          Live Demo →
-                        </Link>
+                        {project.id === 'digisave' && (
+                          <Link href={project.liveLink} target="_blank" className="project-link primary">
+                            Live Demo →
+                          </Link>
+                        )}
                         <Link href={project.codeLink} target="_blank" className="project-link secondary">
                           View Code →
                         </Link>

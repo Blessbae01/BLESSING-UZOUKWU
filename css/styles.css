@@ -2793,3 +2793,96 @@ pre {
     margin: 0.2rem 0;
   }
 }
+
+/* Enhanced Carousel Mobile Responsive */
+@media (max-width: 768px) {
+  .projects-carousel {
+    padding: 0.8rem;
+  }
+
+  .project-featured {
+    padding: 0.8rem;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .carousel-indicators {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-carousel {
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-featured {
+    gap: 0.6rem;
+    padding: 0.6rem;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .project-content h3 {
+    font-size: 1rem;
+  }
+
+  .project-subtitle {
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .project-content p {
+    font-size: 0.75rem;
+  }
+
+  .tech-stack span {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .project-links {
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+  }
+
+  .project-link {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .carousel-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .carousel-prev {
+    left: 0.3rem;
+  }
+
+  .carousel-next {
+    right: 0.3rem;
+  }
+
+  .carousel-indicators {
+    gap: 0.3rem;
+    margin-top: 0.6rem;
+  }
+
+  .indicator {
+    width: 4px;
+    height: 4px;
+  }
+
+  .indicator.active {
+    width: 12px;
+  }
+}
