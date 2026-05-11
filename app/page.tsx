@@ -243,6 +243,11 @@ export default function Home() {
                   <span>Node.js</span>
                   <span>Express</span>
                 </div>
+                <div className="project-actions">
+                  <Link href="https://techvillahub.com" target="_blank" className="action-link">
+                    View Code →
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -302,10 +307,13 @@ export default function Home() {
                   <span>Bootstrap</span>
                   <span>JavaScript</span>
                 </div>
+                <div className="project-actions">
+                  <Link href="https://github.com/Blessbae01/BBstar_ADHD_DigiTest" target="_blank" className="action-link">
+                    View Code →
+                  </Link>
+                </div>
               </div>
             </div>
-
-            {/* Digi Academy */}
             <div className="project-card">
               <div className="project-card-image">
                 <Image
@@ -327,11 +335,13 @@ export default function Home() {
                   <span>Bootstrap</span>
                   <span>JavaScript</span>
                 </div>
+                <div className="project-actions">
+                  <Link href="https://github.com/Blessbae01/DigiAcademyProject" target="_blank" className="action-link">
+                    View Code →
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
       {/* Skills Section */}
       <section id="skills" className="skills">
