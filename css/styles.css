@@ -1748,6 +1748,25 @@ pre {
   font-size: 0.95rem;
 }
 
+.footer-connect {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.footer-connect h4 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.footer-connect p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .footer-social {
   display: flex;
   gap: 1.5rem;
@@ -2294,6 +2313,21 @@ pre {
     font-size: 0.9rem;
   }
 
+  .footer-connect {
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
+  }
+
+  .footer-connect h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .footer-connect p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
   .footer-social {
     gap: 1rem;
     justify-content: flex-start;
@@ -2343,6 +2377,21 @@ pre {
 
   .footer-brand p {
     font-size: 0.85rem;
+  }
+
+  .footer-connect {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  .footer-connect h4 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .footer-connect p {
+    font-size: 0.8rem;
+    line-height: 1.5;
   }
 
   .footer-social {
